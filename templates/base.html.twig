@@ -10,9 +10,6 @@
             <link rel="stylesheet" href="{{ asset('dist/css/main.css') }}">
         {% endblock %}
 
-
-
-
         {% block javascripts %}
             {#encore_entry_script_tags('app') #}
             <script type="module" src="{{ asset('dist/js/main.js') }}"></script>
@@ -20,5 +17,8 @@
     </head>
     <body>
         {% block content %}{% endblock %}
+
+        {# Vue symfony integration #}
+        <div id="app"></div>
     </body>
 </html>

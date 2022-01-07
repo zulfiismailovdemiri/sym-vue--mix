@@ -13,7 +13,7 @@ class PageController extends AbstractController
      */
     public function index(): Response
     {
-        return new Response('Hallo :-)');
+        return $this->render('home.html.twig', []);
     }
 
     /**

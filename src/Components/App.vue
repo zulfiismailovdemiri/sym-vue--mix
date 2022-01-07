@@ -1,20 +1,23 @@
 <template>
-  <div>
-    <div class="flex items-center">
-      <div class="w-1/3 font-bold text-4xl">
-        Hallo {{ counter }}
-      </div>
-
-      <button class="p-4 bg-blue-400 text-white hover:shadow-2xl rounded-md" @click="counter++">Go Counter</button>
+    <div class="flex flex-col lg:flex-row items-center justify-around">
+      <Navigation />
+      <Counter />
     </div>
-  </div>
 </template>
 <script>
+
+import Navigation from "./Navigation";
+import Counter from "./Counter";
+
 export default {
     data() {
       return {
-        counter: 0
+        counter: 0,
       }
-    }
+    },
+  components: {
+      Counter,
+      Navigation
+  }
 }
 </script>

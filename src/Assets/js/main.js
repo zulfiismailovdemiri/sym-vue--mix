@@ -1,6 +1,9 @@
-import { createApp } from "vue";
+import { createApp, h } from "vue";
 
 import App from '../../Components/App'
 
-createApp(App)
-    .mount('#app')
+const app = createApp({
+    render: ()=>h(App)
+})
+
+app.mount('#app')

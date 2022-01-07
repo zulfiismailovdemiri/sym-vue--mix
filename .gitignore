@@ -2,10 +2,11 @@
 /.env.local
 /.env.local.php
 /.env.*.local
-.idea
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /var/
 /vendor/
 node_modules
 ###< symfony/framework-bundle ###
+.DS_Store
+.idea
