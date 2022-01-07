@@ -8,5 +8,6 @@
 /vendor/
 node_modules
 ###< symfony/framework-bundle ###
+.env
 .DS_Store
 .idea
