@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ page }}{% endblock %}
+{% block content %}
+
+    <div class="w-10/12 mx-auto">
+
+        <h2 class="font-bold text-6xl text-gray-600 mb-8">Page</h2>
+        {{ page }}
+
+        <h2>Liste</h2>
+        <ul>
+            {% for item in list %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <div id="app"></div>
+    </div>
+
+{% endblock %}
