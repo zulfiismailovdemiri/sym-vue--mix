@@ -16,6 +16,25 @@
         {% endblock %}
     </head>
     <body>
+
+        <div class="flex w-full mx-auto py-20 ">
+            <header class="flex flex-col lg:flex-row w-10/12 mx-auto">
+                <div class="font-bold text-6xl mb-12">
+                    <a class="p-4 bg-gray-100" href="/">Brand</a>
+                </div>
+                <nav class="lg:ml-auto">
+                    <ul class="flex">
+                        <li class="">
+                            <a class="p-4 bg-gray-100" href="/">Home</a>
+                        </li>
+                        <li class="ml-4">
+                            <a class="p-4 bg-gray-100" href="{{ random(['apple-text-here', 'orange-text', 'citrus-text']) }}">{{ random(['apple-text-here', 'orange-text', 'citrus-text']) }}</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
         {% block content %}{% endblock %}
 
         {# Vue symfony integration #}

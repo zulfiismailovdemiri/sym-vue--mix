@@ -22,8 +22,10 @@ class PageController extends AbstractController
     public function page($slug): Response
     {
         $list = [
-            'erste',
-            'zweite'
+            'Kaffee',
+            'Zucker',
+            'Milch',
+            'Kuchen'
         ];
 
         dump($this);
